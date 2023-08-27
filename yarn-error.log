@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add @expo-google-fonts/lato
+  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add @expo-google-font/oswald
 
 PATH: 
-  /Users/louismartindunord/Desktop/formation/React/MealsToGo/node_modules/.bin:/Users/louismartindunord/Desktop/formation/React/MealsToGo/node_modules/.bin:/Users/louismartindunord/Desktop/formation/React/node_modules/.bin:/Users/louismartindunord/Desktop/formation/node_modules/.bin:/Users/louismartindunord/Desktop/node_modules/.bin:/Users/louismartindunord/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/louismartindunord/anaconda3/bin:/Users/louismartindunord/anaconda3/condabin:/Users/louismartindunord/Library/Android/sdk/emulator:/Users/louismartindunord/Library/Android/sdk/platform-tools:/Users/louismartindunord/Library/Android/sdk/emulator:/Users/louismartindunord/Library/Android/sdk/platform-tools
+  /Users/louismartindunord/Desktop/formation/React/MealsToGo/node_modules/.bin:/Users/louismartindunord/Desktop/formation/React/MealsToGo/node_modules/.bin:/Users/louismartindunord/Desktop/formation/React/node_modules/.bin:/Users/louismartindunord/Desktop/formation/node_modules/.bin:/Users/louismartindunord/Desktop/node_modules/.bin:/Users/louismartindunord/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/louismartindunord/anaconda3/bin:/Users/louismartindunord/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/louismartindunord/Library/Android/sdk/emulator:/Users/louismartindunord/Library/Android/sdk/platform-tools
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.npmjs.org/@react-inavigation%2fbottom-tabs: Not found
+  Error: https://registry.npmjs.org/@expo-google-font%2foswald: Not found
       at params.callback [as _callback] (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66145:18)
       at self.callback (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
@@ -39,11 +39,11 @@ npm manifest:
       "lint": "eslint . --ext .js"
     },
     "dependencies": {
-      "@expo-google-fonts/lato": "^0.2.2",
+      "@expo-google-fonts/lato": "^0.2.3",
       "@expo-google-fonts/oswald": "^0.2.2",
       "@react-native-async-storage/async-storage": "~1.17.3",
       "@react-native-masked-view/masked-view": "0.2.8",
-      "@react-inavigation/bottom-tabs": "^6.4.3",
+      "@react-navigation/bottom-tabs": "^6.5.8",
       "@react-navigation/native": "^6.0.16",
       "@react-navigation/stack": "^6.3.7",
       "camelize": "^1.0.0",
@@ -1139,10 +1139,10 @@ Lockfile:
       "@babel/helper-validator-identifier" "^7.22.5"
       to-fast-properties "^2.0.0"
   
-  "@callstack/react-theme-provider@^3.0.9":
-    version "3.0.9"
-    resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.9.tgz#01035fa1231f1fffc1a806be1b55eb82716e80c1"
-    integrity sha512-tTQ0uDSCL0ypeMa8T/E9wAZRGKWj8kXP7+6RYgPTfOPs9N07C9xM8P02GJ3feETap4Ux5S69D9nteq9mEj86NA==
+  "@callstack/react-theme-provider@^3.0.7":
+    version "3.0.8"
+    resolved "https://registry.npmjs.org/@callstack/react-theme-provider/-/react-theme-provider-3.0.8.tgz"
+    integrity sha512-5U231sYY2sqQOaELX0WBCn+iluV8bFaXIS7em03k4W5Xz0AhGvKlnpLIhDGFP8im/SvNW7/2XoR0BsClhn9t6Q==
     dependencies:
       deepmerge "^3.2.0"
       hoist-non-react-statics "^3.3.0"
@@ -1192,10 +1192,10 @@ Lockfile:
       minimatch "^3.0.4"
       strip-json-comments "^3.1.1"
   
-  "@expo-google-fonts/lato@^0.2.2":
-    version "0.2.2"
-    resolved "https://registry.npmjs.org/@expo-google-fonts/lato/-/lato-0.2.2.tgz"
-    integrity sha512-axw+QWJYyDHuj/W0364OFRu5MyNEU332up1bE6o4K7fP0e0mSDgocof7Eip4AP65SmP8zsPIR0LtJezORnkDBw==
+  "@expo-google-fonts/lato@^0.2.3":
+    version "0.2.3"
+    resolved "https://registry.yarnpkg.com/@expo-google-fonts/lato/-/lato-0.2.3.tgz#32456b5c49d9f84d2b22ecfa8f50027555439e9c"
+    integrity sha512-X56FEZn2GNYtI2/UqyOps7TShuDwi/k9JKa7VzM0x2ywBOnhTtXGq2IsZyNPzT9KnQA/ID84F9yiMS8e3obu0g==
   
   "@expo-google-fonts/oswald@^0.2.2":
     version "0.2.2"
@@ -2362,12 +2362,12 @@ Lockfile:
     resolved "https://registry.npmjs.org/@react-native/polyfills/-/polyfills-2.0.0.tgz"
     integrity sha512-K0aGNn1TjalKj+65D7ycc1//H9roAQ51GJVk5ZJQFb2teECGmzd86bYDC0aYdbRf7gtovescq4Zt6FR0tgXiHQ==
   
-  "@react-navigation/bottom-tabs@^6.4.3":
-    version "6.4.3"
-    resolved "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.4.3.tgz"
-    integrity sha512-nkuHJ31mEyrZZPswfMAHZgUTEm11ohN9Fy54wao2HFk1VM4eplijX6pFGycA4yhKy73A/aesKhghVPzR+FaSmg==
+  "@react-navigation/bottom-tabs@^6.5.8":
+    version "6.5.8"
+    resolved "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.5.8.tgz"
+    integrity sha512-0aa/jXea+LyBgR5NoRNWGKw0aFhjHwCkusigMRXIrCA4kINauDcAO0w0iFbZeKfaTCVAix5kK5UxDJJ2aJpevg==
     dependencies:
-      "@react-navigation/elements" "^1.3.9"
+      "@react-navigation/elements" "^1.3.18"
       color "^4.2.3"
       warn-once "^0.1.0"
   
@@ -2383,10 +2383,10 @@ Lockfile:
       react-is "^16.13.0"
       use-latest-callback "^0.1.5"
   
-  "@react-navigation/elements@^1.3.9":
-    version "1.3.9"
-    resolved "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.9.tgz"
-    integrity sha512-V9aIZN19ufaKWlXT4UcM545tDiEt9DIQS+74pDgbnzoQcDypn0CvSqWopFhPACMdJatgmlZUuOrrMfTeNrBWgA==
+  "@react-navigation/elements@^1.3.18", "@react-navigation/elements@^1.3.9":
+    version "1.3.18"
+    resolved "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.18.tgz"
+    integrity sha512-/0hwnJkrr415yP0Hf4PjUKgGyfshrvNUKFXN85Mrt1gY49hy9IwxZgrrxlh0THXkPeq8q4VWw44eHDfAcQf20Q==
   
   "@react-navigation/native@^6.0.16":
     version "6.0.16"
@@ -7254,6 +7254,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz"
     integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
   
+  react-native-iphone-x-helper@^1.3.1:
+    version "1.3.1"
+    resolved "https://registry.npmjs.org/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz"
+    integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
+  
   react-native-maps@1.3.2:
     version "1.3.2"
     resolved "https://registry.npmjs.org/react-native-maps/-/react-native-maps-1.3.2.tgz"
@@ -7261,14 +7266,14 @@ Lockfile:
     dependencies:
       "@types/geojson" "^7946.0.8"
   
-  react-native-paper@^5.10.3:
-    version "5.10.3"
-    resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-5.10.3.tgz#75f5dafc71e0f0072877fcb24aa877bd1ec7d22b"
-    integrity sha512-UXT+cOnycpepAhE1t7E4PqFk5mSLtCA5BSQkt6xGi7XJxnpBF3v4orcHwG/OQEOWx7TpWKGPCjhDewnZodOl5Q==
+  react-native-paper@^4.12.5:
+    version "4.12.5"
+    resolved "https://registry.npmjs.org/react-native-paper/-/react-native-paper-4.12.5.tgz"
+    integrity sha512-gdUtJJf0bw/0xoCE1jR6qCQiQCQZ9ivZh0lbPghFFaGxX88WtTQpusnGON8WhLPeH5odEQ4dTBu99lnIQvSFow==
     dependencies:
-      "@callstack/react-theme-provider" "^3.0.9"
+      "@callstack/react-theme-provider" "^3.0.7"
       color "^3.1.2"
-      use-latest-callback "^0.1.5"
+      react-native-iphone-x-helper "^1.3.1"
   
   react-native-reanimated@~2.12.0:
     version "2.12.0"
