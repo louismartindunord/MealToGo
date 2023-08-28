@@ -16,3 +16,14 @@ web-build/
 firebase-debug.log
 ui-debug.log
 .runtimeconfig.json
+yarn-error.log
+
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
