@@ -1,7 +1,6 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
 import { ThemeProvider } from "styled-components/native";
-import { initializeApp } from "firebase/app";
 
 import {
   useFonts as useOswald,
@@ -10,20 +9,7 @@ import {
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
 import { theme } from "./src/infrastructure/theme";
-import { Navigation } from "./src/infrastructure/navigation";
-
-import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
-
-const firebaseConfig = {
-  apiKey: "<fill in your own>",
-  authDomain: "<fill in your own>",
-  projectId: "<fill in your own>",
-  storageBucket: "<fill in your own>",
-  messagingSenderId: "<fill in your own>",
-  appId: "<fill in your own>",
-};
-
-initializeApp(firebaseConfig);
+import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
@@ -41,9 +27,7 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <AuthenticationContextProvider>
-          <Navigation />
-        </AuthenticationContextProvider>
+        <RestaurantsScreen />
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
