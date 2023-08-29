@@ -9,7 +9,7 @@ import {
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
 import { theme } from "./src/infrastructure/theme";
-import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
+import { RestaurantsScreen } from "./src/components/features/restaurants/screens/Restaurant.screen";
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
