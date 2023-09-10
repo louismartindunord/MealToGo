@@ -2,7 +2,9 @@ import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
 import { ThemeProvider } from "styled-components/native";
 import { theme } from "./src/infrastructure/theme/index";
-
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Text } from "react-native";
 import {
   useFonts as useOswald,
   Oswald_400Regular,
@@ -10,6 +12,20 @@ import {
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
 import { RestaurantsScreen } from "./src/components/features/restaurants/screens/Restaurant.screen";
+import { SafeArea } from "./src/components/utility/safe-area.component";
+
+const Map = () => (
+  <SafeArea>
+    <Text>MAP!</Text>
+  </SafeArea>
+);
+
+const Setting = () => (
+  <SafeArea>
+    <Text>Setting!</Text>
+  </SafeArea>
+);
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
@@ -27,7 +43,13 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <RestaurantsScreen />
+        <NavigationContainer>
+          <Tab.Navigator>
+            <Tab.Screen name="Home" component={RestaurantsScreen} />
+            <Tab.Screen name="Map" component={Map} />
+            <Tab.Screen name="Setting" component={Setting} />
+          </Tab.Navigator>
+        </NavigationContainer>
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
