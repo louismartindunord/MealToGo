@@ -1,5 +1,5 @@
 import React from "react";
-import { Spacer } from "../../../../components/spacer/spacer.component";
+import { Spacer } from "../../../spacer/spacer.component";
 import { Image } from "react-native";
 import { SvgXml } from "react-native-svg";
 
@@ -17,7 +17,7 @@ import {
   SectionEnd,
 } from "./restaurant-info-card.styles";
 
-import { Text } from "../../../../components/typography/text.components";
+import { Text } from "../../../typography/text.components";
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
