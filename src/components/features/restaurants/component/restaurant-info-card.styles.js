@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 import { Card } from "react-native-paper";
-import { Text } from "../../../../components/typography/text.components";
+import { Text } from "../../../typography/text.components";
 
 export const RestaurantCard = styled(Card)`
   background-color: ${(props) => props.theme.colors.bg.primary};
